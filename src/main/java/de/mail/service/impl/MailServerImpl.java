@@ -101,7 +101,7 @@ public class MailServerImpl implements MailServer {
 						        ||
 						       (mail.getStatus().equals(MailStatus.FAIL) 
 						        &&
-						        mail.getCurrentRetry() > maxRetry));
+						        mail.getCurrentRetry() >= maxRetry));
 	}
     
 	/**
